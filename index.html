@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CDN (ONLY ONCE) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- DaisyUI CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <title>BDBiker</title>
+
+  <link rel="shortcut icon" href="/bike.jpg" type="image/x-icon">
+
+</head>
+<body class="max-w-7xl mx-auto">
+  <!-- navbar  -->
+    <nav class="flex items-center justify-between px-4 bg-white shadow-sm border mt-7 rounded-lg">
+        <img class="w-[60px] h-[70px] " src="/bike.jpg" alt="">
+        <div class="hidden lg:flex lg:gap-20 list-none text-lg text-white gap-8 ">
+            <li class="  bg-sky-400 hover:bg-sky-500 px-4 py-2 rounded-full text-lg font-semibold transition duration-300 cursor-pointer">Home</li>
+            <li class="bg-sky-400 hover:bg-sky-500 px-4 py-2 rounded-full text-lg font-semibold transition duration-300 cursor-pointer">Your Cart</li>
+            <li class="bg-sky-400 hover:bg-sky-500 px-4 py-2 rounded-full text-lg font-semibold transition duration-300 cursor-pointer ">About Us</li>
+        </div>
+        <div class="hidden lg:block">
+          <button class="bg-sky-400 hover:bg-sky-500 px-4 py-2 rounded-full text-lg font-semibold transition duration-300 text-white">Login</button>
+        </div>
+
+        <div class="lg:hidden cursor-pointer">
+              <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+     <header class="relative overflow-hidden mt-7 lg:h-[700px] h-[200px]">
+
+  <video autoplay muted loop playsinline 
+    class="absolute  object-cover">
+    <source src="./biker.mp4" type="video/mp4" />
+  </video>
+
+
+  <div class="relative z-10 flex flex-col items-center mt-4 lg:mt-[250px] h-screen text-center text-white px-4 ">
+    
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+      Welcome to bdbiker
+    </h1>
+
+    <p class="text-lg md:text-2xl mb-6">
+      Ride Your Dream Machine
+    </p>
+
+    <a href="#bikes" 
+       class="bg-sky-400 hover:bg-sky-500 px-6 py-3 rounded-full text-lg font-semibold transition duration-300">
+       Explore Bikes
+    </a>
+
+  </div>
+
+</header>
+
+
+<!-- card section -->
+
+<h1 class="text-3xl font-bold">Fearured <span class="text-sky-400">Bikes</span></h1>
+  <section class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-7 gap-8">
+
+    <div class=" space-y-4 bg-white shadow-lg p-4">
+      <img class="object-cover transition-transform decoration-300 hover:scale-105"  src="./bike1jpg.jpg" alt="">
+      <hr>
+      <div class=" flex items-center justify-between">
+        <h1 class="text-lg font-bold">TVS Motor Ronin 225 </h1>
+        <button class=" border border-sky-400 px-4 text-sky-400  rounded-full">New</button>
+        
+      </div>
+      <h1 class="text-2xl text-sky-400">
+        <i class="fa-solid fa-dollar-sign"></i>67000
+      </h1>
+
+      <div class="flex items-center justify-between gap-5">
+        <button class="bg-sky-400 hover:bg-sky-500  text-white py-3  rounded-full w-full  text-lg font-semibold transition duration-300">Buy now</button>
+        <button class="border border-sky-400 hover:bg-sky-200  text-sky-400 py-3   rounded-full w-full  text-lg font-semibold transition duration-300">Add to cart</button>
+      </div>
+    </div>
+                                        <!-- card 2 -->
+
+    <div class=" space-y-4 bg-white shadow-lg p-4">
+      <img class="object-cover transition-transform decoration-300 hover:scale-105  h-[375px] w-full"  src="	https://i.pinimg.com/1200x/97/5b/d1/975bd1d471c0f9215398b9dc9dffe993.jpg" alt="">
+      <hr>
+      <div class=" flex items-center justify-between">
+        <h1 class="text-lg font-bold">AVENGERS 125</h1>
+        <button class=" border border-sky-400 px-4 text-sky-400  rounded-full">New</button>
+        
+      </div>
+      <h1 class="text-2xl text-sky-400">
+        <i class="fa-solid fa-dollar-sign"></i>67000
+      </h1>
+
+      <div class="flex items-center justify-between gap-5">
+        <button class="bg-sky-400 hover:bg-sky-500  text-white py-3  rounded-full w-full  text-lg font-semibold transition duration-300">Buy now</button>
+        <button class="border border-sky-400 hover:bg-sky-200  text-sky-400 py-3   rounded-full w-full  text-lg font-semibold transition duration-300">Add to cart</button>
+      </div>
+    </div>
+                              <!-- card 3 -->
+
+    <div class=" space-y-4 bg-white shadow-lg p-4">
+      <img class="object-cover transition-transform decoration-300 hover:scale-105  "  src="https://i.pinimg.com/736x/10/de/14/10de1439c7908b984b76cc8895812dac.jpg" alt="">
+      <hr>
+      <div class=" flex items-center justify-between">
+        <h1 class="text-lg font-bold">Jawa 42 FJ</h1>
+        <button class=" border border-sky-400 px-4 text-sky-400  rounded-full">New</button>
+        
+      </div>
+      <h1 class="text-2xl text-sky-400">
+        <i class="fa-solid fa-dollar-sign"></i>1,99,142
+      </h1>
+
+      <div class="flex items-center justify-between gap-5">
+        <button class="bg-sky-400 hover:bg-sky-500  text-white py-3  rounded-full w-full  text-lg font-semibold transition duration-300">Buy now</button>
+        <button class="border border-sky-400 hover:bg-sky-200  text-sky-400 py-3   rounded-full w-full  text-lg font-semibold transition duration-300">Add to cart</button>
+      </div>
+    </div>
+
+                                        <!-- card 4 -->
+    <div class=" space-y-4 bg-white shadow-lg p-4">
+      <img class="object-cover transition-transform decoration-300 hover:scale-105 h-[373px] w-full "  src="	https://i.pinimg.com/736x/af/3c/ef/af3cefdae9c549073eb170629cc5b640.jpg" alt="">
+      <hr>
+      <div class=" flex items-center justify-between">
+        <h1 class="text-lg font-bold">Stark VARG Alpha Enduro 18</h1>
+        <button class=" border border-sky-400 px-4 text-sky-400  rounded-full">New</button>
+        
+      </div>
+      <h1 class="text-2xl text-sky-400">
+        <i class="fa-solid fa-dollar-sign"></i>16142
+      </h1>
+
+      <div class="flex items-center justify-between gap-5">
+        <button class="bg-sky-400 hover:bg-sky-500  text-white py-3  rounded-full w-full  text-lg font-semibold transition duration-300">Buy now</button>
+        <button class="border border-sky-400 hover:bg-sky-200  text-sky-400 py-3   rounded-full w-full  text-lg font-semibold transition duration-300">Add to cart</button>
+      </div>
+    </div>
+                                            <!-- card 5 -->
+    <div class=" space-y-4 bg-white shadow-lg p-4">
+      <img class="object-cover transition-transform decoration-300 hover:scale-105 h-[373px] w-full "  src="https://i.pinimg.com/736x/db/dd/56/dbdd564988d4a2ca127369f358c66132.jpg" alt="">
+      <hr>
+      <div class=" flex items-center justify-between">
+        <h1 class="text-lg font-bold">Stark VARG Alpha Enduro 18</h1>
+        <button class=" border border-sky-400 px-4 text-sky-400  rounded-full">New</button>
+        
+      </div>
+      <h1 class="text-2xl text-sky-400">
+        <i class="fa-solid fa-dollar-sign"></i>355999
+      </h1>
+
+      <div class="flex items-center justify-between gap-5">
+        <button class="bg-sky-400 hover:bg-sky-500  text-white py-3  rounded-full w-full  text-lg font-semibold transition duration-300">Buy now</button>
+        <button class="border border-sky-400 hover:bg-sky-200  text-sky-400 py-3   rounded-full w-full  text-lg font-semibold transition duration-300">Add to cart</button>
+      </div>
+    </div>
+                                    <!-- card 6 -->
+    <div class=" space-y-4 bg-white shadow-lg p-4">
+      <img class="object-cover bg-cover h-[373px] w-full transition-transform decoration-300 hover:scale-105  "  src="	https://i.pinimg.com/736x/7e/e9/ae/7ee9ae8e6fd91cf4a0563ac0c1ee0a18.jpg" alt="">
+      <hr>
+      <div class=" flex items-center justify-between">
+        <h1 class="text-lg font-bold"> Euro 4 et ABS</h1>
+        <button class=" border border-sky-400 px-4 text-sky-400  rounded-full">New</button>
+        
+      </div>
+      <h1 class="text-2xl text-sky-400">
+        <i class="fa-solid fa-dollar-sign"></i>355999
+      </h1>
+
+      <div class="flex items-center justify-between gap-5">
+        <button class="bg-sky-400 hover:bg-sky-500  text-white py-3  rounded-full w-full  text-lg font-semibold transition duration-300">Buy now</button>
+        <button class="border border-sky-400 hover:bg-sky-200  text-sky-400 py-3   rounded-full w-full  text-lg font-semibold transition duration-300">Add to cart</button>
+      </div>
+    </div>
+
+  </section>
+ <div class="flex justify-center mt-7">
+   <button class="bg-sky-400 hover:bg-sky-500  text-white py-3  rounded-full w-[200px] text-lg font-semibold transition duration-300">View All</button>
+ </div>
+
+                            <!-- review section -->
+<section>
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- Section Title -->
+    <div class="my-5">
+      <h2 class="text-4xl font-bold text-sky-400">What Our Customers Say</h2>
+    </div>
+
+    <!-- Review Cards Grid -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Review Card 1 -->
+      <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="flex items-center mb-4">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer 1" 
+               class="w-14 h-14 rounded-full mr-4 border-4 border-sky-500">
+          <div>
+            <h3 class="font-semibold text-gray-800">Rashed Hossain</h3>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600">
+          “BD Biker helped me choose the perfect sports bike. Excellent info and support for new riders!”
+        </p>
+      </div>
+
+      <!-- Review Card 2 -->
+      <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="flex items-center mb-4">
+          <img  src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer 2" 
+               class="w-14 h-14 rounded-full mr-4 border-4 border-sky-500">
+          <div>
+            <h3 class="font-semibold text-gray-800">Shabnam Akter</h3>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600">
+          “I loved the community section! I met fellow riders and shared our bike experiences.”
+        </p>
+      </div>
+
+      <!-- Review Card 3 -->
+      <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="flex items-center mb-4">
+          <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Customer 3" 
+               class="w-14 h-14 rounded-full mr-4 border-4 border-sky-500">
+          <div>
+            <h3 class="font-semibold text-gray-800">Fahim Rahman</h3>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600">
+          “Amazing bike reviews and pricing guides. Helped me buy my first bike with confidence.”
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="mt-7">
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- Section Title -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-sky-400">Contact Us</h2>
+      <p class="text-gray-500 mt-3">We would love to hear from you! Send us a message.</p>
+    </div>
+
+    <!-- Contact Grid -->
+    <div class="grid md:grid-cols-2 gap-12">
+
+      <!-- Contact Info -->
+      <div class="space-y-6">
+        <h3 class="text-2xl font-semibold text-gray-800">Get in Touch</h3>
+        <p class="text-gray-600">Have questions about bikes, prices, or our community? Contact us directly.</p>
+
+        <ul class="space-y-4 text-gray-600">
+          <li class="flex items-center"><i class="fas fa-map-marker-alt text-sky-500 mr-3"></i>Mymensing, Bangladesh</li>
+          <li class="flex items-center"><i class="fas fa-phone text-sky-500 mr-3"></i>+880 1862754769</li>
+          <li class="flex items-center"><i class="fas fa-envelope text-sky-500 mr-3"></i>info@bdbiker.com</li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="flex space-x-4 mt-6">
+          <a href="#" class="text-gray-600 hover:text-sky-500 transition text-2xl"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-gray-600 hover:text-sky-500 transition text-2xl"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-600 hover:text-sky-500 transition text-2xl"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-gray-600 hover:text-sky-500 transition text-2xl"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg">
+        <form class="space-y-4">
+          <div>
+            <label class="block text-gray-700 font-semibold mb-1" for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" 
+                   class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-600">
+          </div>
+
+          <div>
+            <label class="block text-gray-700 font-semibold mb-1" for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" 
+                   class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-600">
+          </div>
+
+          <div>
+            <label class="block text-gray-700 font-semibold mb-1" for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Your Message" 
+                      class="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-600"></textarea>
+          </div>
+
+          <button type="submit" 
+                  class="bg-sky-600 hover:bg-sky-700 text-white font-semibold px-6 py-3 rounded-md transition">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+                              <!-- footer section -->
+
+<footer class="bg-white  pt-16">
+  <div class=" px-4 ">
+
+    <!-- Footer Grid -->
+    <div class="grid md:grid-cols-4 gap-8 mb-12">
+
+      <!-- About -->
+      <div>
+        <h3 class="text-xl font-bold  mb-4">BD Biker</h3>
+        <p class="text-gray-400">
+          Your ultimate destination for bikes, news, reviews, and rider community in Bangladesh.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-sky-400 transition">Home</a></li>
+          <li><a href="#" class="hover:text-sky-400 transition">Featured Bikes</a></li>
+          <li><a href="#" class="hover:text-sky-400 transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4">Contact</h3>
+        <ul class="space-y-2">
+          <li><i class="fas fa-map-marker-alt mr-2 text-sky-400"></i>Mymensing, Bangladesh</li>
+          <li><i class="fas fa-phone mr-2 text-sky-400"></i>+880 1862754769</li>
+          <li><i class="fas fa-envelope mr-2 text-sky-400"></i>info@bdbiker.com</li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4">Newsletter</h3>
+        <p class="text-gray-400 mb-4">Subscribe for latest updates and bike news.</p>
+
+      </div>
+
+    </div>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center space-x-6 mb-6">
+      <a href="#" class="text-gray-400 hover:text-sky-400 transition text-2xl"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-gray-400 hover:text-sky-400 transition text-2xl"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-gray-400 hover:text-sky-400 transition text-2xl"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-gray-400 hover:text-sky-400 transition text-2xl"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
+      &copy; 2026 BD Biker. All rights reserved.
+    </div>
+
+  </div>
+</footer>         
+
+</body>
+</html>
